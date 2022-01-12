@@ -145,7 +145,7 @@ body {
   color: rgba(0, 0, 0, 1);
 }
 
-.ask-call-conteiner {
+.ask-call-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -226,7 +226,7 @@ body {
   font-weight: 400;
 }
 
-.content-conteiner {
+.content-container {
   position: relative;
   max-width: 1170px;
   display: flex;
@@ -234,14 +234,18 @@ body {
   margin: 20px auto 0 auto;
 }
 
-.content-conteiner a {
-  text-decoration: none;
+/* --------------------------sidebar start--------------------------- */
+.sidebar-menu-container {
+  margin-bottom: 32pxpx;
 }
 
-/* --------------------------sidebar--------------------------- */
-.side-bar {
+.sidebar {
   width: 33%;
   margin-right: 30px;
+}
+
+.sidebar a {
+  text-decoration: none;
 }
 
 .sidebar-menu-header {
@@ -266,11 +270,10 @@ body {
   opacity: 0.5;
 }
 
-.item-side-bar {
+.item-sidebar {
   font-size: 15px;
-  padding-left: 30px;
-  padding-top: 18px;
-  padding-bottom: 17px;
+  line-height: 18px;
+  padding: 18px 30px 17px 30px;
   display: block;
   align-items: center;
   color: #000000;
@@ -278,29 +281,30 @@ body {
   background-color: #f8f8f8;
 }
 
-.side-bar-menu a:nth-child(odd) {
+.sidebar-menu .item-sidebar:nth-child(odd) {
   background-color: #ebebeb;
 }
 
-.side-bar-text {
+.sidebar-text {
   background-color: #ebebeb;
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
 
-.side-bar-text-header {
+.sidebar-text-header {
   font-size: 18px;
   margin: 30px 30px 13px 30px;
   line-height: 24px;
 }
 
-.side-bar-text-content {
+.sidebar-text-content {
   font-size: 15px;
   margin: 0 30px 26px 30px;
   line-height: 26px;
   font-weight: 400;
 }
+/* --------------------------sidebar end--------------------------- */
 
 /* --------------------------content--------------------------- */
 .content {
@@ -310,22 +314,25 @@ body {
   flex-direction: column;
 }
 
-.items-list-header {
+.items-list-title {
   display: flex;
   align-items: center;
   font-size: 26px;
   font-weight: 700;
   height: 50px;
+  margin-bottom: 20px;
 }
 
 .items-list {
   display: grid;
   grid-template-columns: repeat(6, 120px);
-  grid-template-rows: repeat(auto, 194px);
   column-gap: 30px;
-  margin-top: 16px;
   text-align: center;
   margin-bottom: 23px;
+}
+
+.items-list a {
+  text-decoration: none;
 }
 
 .item-description {
@@ -343,10 +350,111 @@ body {
   text-align: center;
 }
 
-.free-call {
+.callback-form {
   height: 200px;
   background-color: rgba(244, 244, 244, 0.7);
   border-radius: 3px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.callback-title {
+  display: flex;
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 32px;
+}
+
+.callback-inputs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 730px;
+  margin-top: 24px;
+  border-radius: 3px;
+}
+
+.callback-input {
+  width: 200px;
+  height: 44px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(199, 199, 199);
+  padding-left: 16px;
+}
+
+.callback-input-submit {
+  width: 270px;
+  height: 44px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  background-color: #feb900;
+  color: #ffffff;
+  border-radius: 3px;
+  border-style: none;
+  cursor: pointer;
+}
+
+.callback-checkbox-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 19px;
+  align-items: center;
+  width: 730px;
+}
+
+.callback-checkbox-container p {
+  margin: 0;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #bcbcbc;
+  margin: 0 10px 0 0;
+}
+
+.checkbox-text {
+  font-size: 14px;
+  color: rgba(155, 155, 155, 1);
+}
+
+.checkbox-reference {
+  font-size: 14px;
+  color: rgba(24, 124, 242, 1);
+  margin-left: 5px;
+}
+
+.content-text {
+  margin: 32px 0 26px 0;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.accordion-content {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.accordion-title {
+  padding: 15px;
+  color: black;
+  cursor: pointer;
+}
+
+.active {
+  color: red;
 }
