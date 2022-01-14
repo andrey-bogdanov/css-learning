@@ -350,6 +350,10 @@ body {
   text-align: center;
 }
 
+.th1 {
+  width: 84px;
+}
+
 .callback-form {
   height: 200px;
   background-color: rgba(244, 244, 244, 0.7);
@@ -443,8 +447,7 @@ body {
 }
 
 .accordion-content {
-  padding: 0 18px;
-  background-color: white;
+  padding: 0;
   display: none;
   overflow: hidden;
 }
@@ -453,8 +456,59 @@ body {
   padding: 15px;
   color: black;
   cursor: pointer;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .active {
-  color: red;
+  background-color: #dadada;
 }
+
+.accordion {
+  background-color: #f8f8f8;
+}
+.accordion .accordion-item:nth-child(odd) {
+  background-color: #ebebeb;
+}
+
+.chevron {
+  height: 10px;
+  width: 18px;
+  transform: none;
+}
+
+/* Table start */
+
+.price-list-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.price-list-table thead {
+  background-color: #3aa900;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #f8f8f8;
+}
+
+.price-list-table tbody tr {
+  height: 50px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.price-list-table tbody tr:nth-child(even) {
+  background-color: #ebebeb;
+}
+
+.price-list-table tbody tr:nth-child(odd) {
+  background-color: #f8f8f8;
+}
+
+/* Table end */
