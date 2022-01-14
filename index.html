@@ -19,7 +19,7 @@
               <li><a href="#">Главная</a></li>
               <li><a href="#">Доставка</a></li>
               <li><a href="#">Отзывы</a></li>
-              <li><a href="#">Калькулятор</a></li>
+              <li class="current-menu-item"><a href="#">Калькулятор</a></li>
               <li><a href="#">Опт</a></li>
               <li><a href="#">Прайс</a></li>
               <li><a href="#">Контакты</a></li>
@@ -340,15 +340,17 @@
             <div class="callback-title">
               Оставьте заявку на бесплатный звонок консультанта
             </div>
-            <div class="callback-inputs">
+            <!-- add tag form -->
+            <div class="callback-inputs"> 
               <input type="text" placeholder="Ваше имя" class="callback-input"/>
               <input type="tel" placeholder="+7 (__) ___-__-__" class="callback-input"/>
               <input type="button" value="Получить консультацию" class="callback-input-submit"/>
             </div>
             <div class="callback-checkbox-container">
               <input type="checkbox" class="checkbox">
-              <p class="checkbox-text">Согласен на обработку персональных данных</p>
-              <a href="#" class="checkbox-reference">Политика конфиденцильности</a>
+              <p class="checkbox-text">Согласен на обработку персональных данных 
+                <a href="#" class="checkbox-reference">Политика конфиденцильности</a>
+              </p>
             </div>
           </div>
 
@@ -371,7 +373,7 @@
                   <table class=price-list-table>
                     <thead>
                       <tr>
-                        <th class="th1">№</th>
+                        <th>№</th>
                         <th>Размер, мм</th>
                         <th>Сорт</th>
                         <th>Древесина</th>
